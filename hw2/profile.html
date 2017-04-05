@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<title>Profile Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="James Qi">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<a href="main.html">
+		<button>Main Page</button>
+	</a>
+
+	<table style="width: 60%">
+		<tr>
+			<td>Display Name</td>
+			<td>
+				<input type="text" id="name1" placeholder="Display Name">
+			</td>
+			<td>
+				<div id="name2">James Qi</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Email Address</td>
+			<td>
+				<input type="email" id="email1" placeholder="XXX@rice.edu">
+			</td>
+			<td>
+				<div id="email2">qisuozhi@gmail.com</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Phone Number</td>
+			<td>
+				<input type="tel" id="phone1" placeholder="XXX-XXX-XXXX">
+			</td>
+			<td>
+				<div id="phone2">812-606-4659</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Zipcode</td>
+			<td>
+				<input type="text" id="zipcode1" placeholder="77005">
+			</td>
+			<td>
+				<div id="zipcode2">77005</div>
+			</td>
+		</tr>
+		<tr>
+			<td>PassWord</td>
+			<td>
+				<input type="password" id="password1">
+			</td>
+			<td id="password2"></td>
+		</tr>
+		<tr>
+			<td>PassWord Confirmation</td>
+			<td>
+				<input type="password" id="passconfir1">
+			</td>
+			<td id="passconfir2"></td>
+		</tr>
+	</table>
+
+	<input type="submit" value="Update" onclick="validate()">
+	<br>
+	<br>
+
+	<div class="updateInfo" id="nameInfo"></div>
+	<div class="updateInfo" id="emailInfo"></div>
+	<div class="updateInfo" id="phoneInfo"></div>
+	<div class="updateInfo" id="zipcodeInfo"></div>
+	<div class="updateInfo" id="passwordInfo"></div>
+
+</body>
+<script type="text/javascript" src="profile.js"></script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<title></title>
+	<meta name="author" content="James Qi">
+	<style type="text/css">
+		#congrats {
+			width: 300px;
+			text-align: center;
+			background-color: #00ff00;
+			color: #0066ff;
+			font-size: 1.5em;
+			padding: 5px 5px 5px 5px;
+			border: 5px solid red;
+			border-radius: 20px;
+			margin: auto;
+		}
+
+		#clickbutton {
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id="congrats" style="display: none">
+		<div>Congratulations!</div>
+		<div>You won!</div>
+	</div>
+<!-- 	<input type="button" id="clickbutton" value="Click Me"> -->
+	<button id="clickbutton" onclick="clickme()">Click Me</button>
+	<script src="avoidthemouse.js"></script>
+</body>
+</html>

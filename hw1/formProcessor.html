@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="James Qi">
+	<meta name="keywords" content="HTML,Javascript">
+	<title>form Processor</title>
+	<style>
+		table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td{
+			padding: 10px;
+		}
+		th, td{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Your Table</h1>
+
+	<table>
+		<tr>
+			<th>Key</th>
+			<th>Value</td>
+		</tr>
+		<tr>
+			<td>Account Name</td>
+			<td id="accountName"></td>
+		</tr>
+		<tr>
+			<td>Display Name</td>
+			<td id="displayName"></td>
+		</tr>
+		<tr>
+			<td>Email Address</td>
+			<td id="emailAddress"></td>
+		</tr>
+		<tr>
+			<td>Phone Number</td>
+			<td id="phoneNumber"></td>
+		</tr>
+		<tr>
+			<td>Date of Birth</td>
+			<td id="birthDate"></td>
+		</tr>
+		<tr>
+			<td>ZipCode</td>
+			<td id="zipcode"></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td id="password"></td>
+		</tr>
+		<tr>
+			<td>Password Confirmation</td>
+			<td id="confirmation"></td>
+		</tr>
+		<tr>
+			<td>Timestamp</td>
+			<td id="timestamp"></td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		var input=location.href.split("?")[1];
+		var inputList=input.split("&");
+			
+		document.getElementById("accountName").innerHTML=inputList[0].split("=")[1];
+		document.getElementById("displayName").innerHTML=inputList[1].split('=')[1];
+		document.getElementById("emailAddress").innerHTML=inputList[2].split('=')[1].replace(/%40/, "@");
+		document.getElementById("phoneNumber").innerHTML=inputList[3].split('=')[1];
+		document.getElementById("birthDate").innerHTML=inputList[4].split('=')[1];		
+		document.getElementById("zipcode").innerHTML=inputList[5].split('=')[1];
+		document.getElementById("password").innerHTML=inputList[6].split('=')[1];
+		document.getElementById("confirmation").innerHTML=inputList[7].split('=')[1];
+		document.getElementById("timestamp").innerHTML=new Date(Number(inputList[8].split('=')[1]));
+	</script>
+	
+</body>
+</html>

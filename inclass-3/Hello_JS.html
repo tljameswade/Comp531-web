@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>In-class 3</title>
+</head>
+	<h1>Hello HTML JavaScript!</h1>
+<body onload="countdownTime()">
+	<p>My name: Suozhi Qi</p>
+	<img src="https://staff.rice.edu/images/staff/branding/logo.jpg" width="200px" title="Picture">
+	<p>This is Rice University Logo. My last trip was to China.</p>
+	<p>My contact information: <a href="www.linkedin.com/in/suozhiqi"></a></p>
+	<textarea rows="7" cols="40" id="txtarea"></textarea>
+	<button type="button">submit</button>
+	<button type="button" onclick="cleartxt()">clear</button>
+	<p><span id="indicator"></span></p>
+	<br>
+	<button type="button" onclick="pauseCountdown()">Pause</button>
+	<button type="button" onclick="resumeCountdown()">Resume</button>
+
+	<script type="text/javascript">
+		var currTime = 15000;
+		var timer = setInterval(showTime, 1000);
+		var pausedTime = currTime;
+
+		function showTime(){
+			var output = "Countdown clock: " + currTime/1000;
+			document.getElementById("indicator").innerHTML = output;
+			currTime = currTime - 1000;
+			pausedTime = currTime;
+			if (currTime<=0) {
+				location.href = "https://www.clear.rice.edu/comp431/sample/hello.html";
+				clearInterval(timer);
+			}
+		}
+		function cleartxt(){
+			document.getElementById("txtarea").value="";
+		}
+
+		function countdownTime(){
+			setTimeout(function(){alert("the page will redirect when counter reaches zero");}, 5000);
+		}
+
+		function pauseCountdown(){
+			clearInterval(timer);
+		}
+
+		function resumeCountdown(){
+			currTime = pausedTime;
+			timer = setInterval(showTime, 1000);
+		}
+
+	</script>
+</body>
+</html>

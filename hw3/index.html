@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Basketball shootout</title>
+	<meta name="author" content="James Qi">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="styles.css">
+
+	<script type="text/javascript" src="basketball.js"></script>
+</head>
+<body>
+	<canvas width="1100" height="800" style="position:absolute" id="currcanvas">
+	</canvas>
+	<button id="startgame" onclick="initgame()">Start Game</button>
+	<button id="playagain" style="display: none" onclick="initgame()">Play Again?</button>
+	<button id="nextlevel" style="display: none" onclick="initgame()">Next Level</button>
+	<div id="scorediv">Score:<span id="score"></span></div>
+	<div id="timer">Time:<span id="time"></span></div>
+	<div id="bestscore">Best:<span id="record"></span></div>
+	<div id="congrats" style="display: none">Congratulations!</div>
+	<div id="levelinfo">Level: <span id="currlevel"></span></div>
+	<div id="target">Target: <span id="targetscore"></span></div>
+	<div id="bestacc" style="display: none">Best accuracy: <span id="accuracy1"></span></div>
+	<div id="youracc" style="display: none">Your accuracy: <span id="accuracy2"></span></div>
+	<img id="instructions" src='instructions.jpg'>
+</body>
+</html>

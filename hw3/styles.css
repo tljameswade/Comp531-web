@@ -1,0 +1,84 @@
+		#scorediv {
+			position: absolute;
+			top : 30px;
+			left: 900px;
+			font-size: 2em;
+		}
+		canvas#currcanvas {
+			background-color: #33cccc;
+		}
+		#bestscore {
+			position: absolute;
+			top : 30px;
+			left: 700px;
+			font-size: 2em;
+		}
+		#startgame {
+			position: absolute;
+			top: 200px;
+			left: 500px;
+			font-color: black;
+			font-size: 2em;
+		}
+		#timer {
+			position: absolute;
+			top: 30px;
+			left: 500px;
+			font-size: 2em;
+		}
+		#playagain {
+			position: absolute;
+			top: 200px;
+			left: 350px;
+			font-color: black;
+			font-size: 2em;
+		}
+		#nextlevel {
+			position: absolute;
+			top: 200px;
+			left: 650px;
+			font-color: black;
+			font-size: 2em;
+		}
+		#congrats {
+			position: absolute;
+			top: 130px;
+			left: 330px;
+			font-color: black;
+			font-size: 2em;			
+		}
+		#bestacc {
+			position: absolute;
+			top: 100px;
+			left: 600px;
+			color: red;
+			font-size: 1.5em;				
+		}
+		#youracc {
+			position: absolute;
+			top: 140px;
+			left: 600px;
+			color: red;
+			font-size: 1.5em;	
+		}
+		#levelinfo {
+			position: absolute;
+			top: 20px;
+			left: 330px;
+			font-color: black;
+			font-size: 1.2em;
+		}
+		#target {
+			position: absolute;
+			top: 40px;
+			left: 330px;
+			font-color: black;
+			font-size: 1.2em;
+		}
+		#instructions {
+			position: absolute;
+			top: 8px;
+			left: 8px;
+			width: 290px;
+			height: 390px;
+		}

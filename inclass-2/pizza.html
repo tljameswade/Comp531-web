@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>inclass-2</title>
+	<meta charset="UTF-8">
+</head>
+<h1>Pizza Guys Order Form</h1>
+<body>
+
+	<img src="http://imagescdn.tweaktown.com/news/3/5/35347_01_internet_helping_giant_pizza_chains_destroy_the_little_guys_full.jpg" width="200px" title="Pizza Guys!">
+
+	<form>
+		Name:<br>
+		<input id="name" type="text" placeholder="your name" required><br>
+
+		Address:#### Stree Name ...<br>
+		<input id="address" type="text" placeholder="delivery address" required><br>
+
+		Phone Number: 123-123-1234<br>
+		<input id="phone" type="tel" placeholder="123-123-1234" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required><br>
+
+		<p><u>Pizza Size</u></p>
+			<input id="size1" name="size" type="radio" value="large" required>Large
+			<input id="size2" name="size" type="radio" value="medium">Medium
+			<input id="size3" name="size" type="radio" value="small">Small
+
+		<p><u>Pizza Toppings</u></p>
+			<input id="topping1" name="topping" type="checkbox" value="sausage">Sausage
+			<input id="topping2" name="topping" type="checkbox" value="pepperoni">Pepperoni
+			<input id="topping3" name="topping" type="checkbox" value="olives">Olives
+			<input id="topping4" name="topping" type="checkbox" value="anchovies">Anchovies
+			<input id="topping5" name="topping" type="checkbox" value="onios">Onions
+
+		<p>
+			<input type="submit" value="Place Order">
+			<button type="button" onclick="clearALL()">Clear</button>
+		</p>
+	</form>
+
+	<script type="text/javascript">
+
+		function clearALL(){
+			document.getElementById("name").value="";
+			document.getElementById("address").value="";
+			document.getElementById("phone").value="";
+
+			for (var i = 1; i <= 3; i++){
+				var eachSize="size" + i;
+				document.getElementById(eachSize).checked=false;
+			}
+
+			for (var i = 1; i <= 5; i++){
+				var eachTopping="topping" + i;
+				document.getElementById(eachTopping).checked=false;
+			}
+		}
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,46 @@
+.text {
+	background-color: #ff99ff;
+	padding: 15px;
+	margin: 10px;
+	color: #0000ff;
+}
+
+.text:hover {
+	background-color: #cc9900;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.image {
+	margin: 10px;
+	font-size: 1.5em;
+	font-style: italic;
+	font-weight: bold;
+	height: 360px;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 10px 10px 5px 5px;
+}
+
+td {
+	padding: 5px;
+	border-style: dashed;
+	border-color: white;
+}
+
+img {
+	height: 300px;
+}
+
+body {
+	background-color: #33ccff;
+}
+
+.updateInfo {
+	margin: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 5px;
+	width: 40%;
+}

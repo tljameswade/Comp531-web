@@ -1,0 +1,28 @@
+{
+    "followers":[
+        {
+            "id": 1,
+            "name": "Jing Wang",
+            "status": "I love buying new clothes and watching TV!",
+            "imgloc": "http://www.chinadaily.com.cn/celebrity/img/attachement/jpg/site1/20151104/b083fe9562de17a3b7c60a.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Quan Liu",
+            "status": "I am just a person carrying the bag for my boss",
+            "imgloc": "http://n.sinaimg.cn/ent/transform/20151207/jJl7-fxmisxu6283837.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Yue Pan",
+            "status": "I love to play music and have fun",
+            "imgloc": "http://images4.fanpop.com/image/photos/15300000/Guns-N-Roses-guns-n-roses-15303946-1280-960.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Fake Driver",
+            "status": "I am concerned about everything",
+            "imgloc": "https://res-1.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_280,q_64,w_560/v1/clients/norway/unesco-geirangerfjord-skagefla-waterfall-2-1_6cc6a64a-a204-432e-8753-01ef2080f24e.jpg"
+        }
+    ]
+}
