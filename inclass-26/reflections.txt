@@ -1,0 +1,17 @@
+—What did you hope to learn but did not?
+Some knowledge of Angular 2.
+
+— What did you really enjoy learning about?
+The hw3 game implementation and everything about how to build a full web app.
+
+— What worked well in the course? and how?
+The in class exercise are very useful. It greatly helped us in building a web app.
+
+— What did not work well in the course and how might it be improved?
+I think the submission system is quite confusing for me. I lost some points for not correctly submitting to correct location.
+
+— What could I have done to help you more, presentation or material, design or in class exercises, goals of projects - and be specific please!
+First I think should put more time in addressing each points in web development. The pace of this course is really fast, and a lot of us cannot catch up with the fast pace. I think it would be very helpful if the teacher could demonstrate to us step by step on how to setup the environment, and what each step in the code does to achieve the final goal.
+
+— Anything else you like to say?
+I really like this course though, unlike many of my peers. I felt that I’ve learnt a lot, though I lost some points through incorrect submission, which is very frustrated. This course taught me about “how the real world works”, what the daily work in a real company looks like. I appreciate it.
